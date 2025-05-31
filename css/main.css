@@ -1,0 +1,73 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+/*-------Colors------*/
+:root {
+    --button-color: hsl(75, 94%, 57%);
+    --font-white: hsl(0, 0%, 100%);
+    --social-background-color: hsl(0, 0%, 20%);
+    --profile-color: hsl(0, 0%, 12%);
+    --background-color: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.main_container {
+    width: 25%;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* centraliza horizontalmente */
+    background-color: var(--profile-color);
+    border-radius: 10px; /* para cantos arredondados */
+    padding: 20px; /* para espaçamento interno */
+}
+.main_container .header_container {
+    text-align: center;
+}
+.main_container .header_container .avatar {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 35%;
+}
+
+.main_container .header_container h1{
+    color: var(--font-white);
+}
+
+.main_container .header_container span {
+    color: hsl(75, 94%, 57%);
+}
+
+.main_container .header_container .ocupation {
+    font-size: 12px;
+    color: var(--font-white);
+}
+
+.main_container .info_links {
+    justify-items: center;
+    display:grid;
+}
+
+.main_container .info_links a {
+    color: var(--font-white);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    width: 80%;
+    background-color: hsl(0, 0%, 20%);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main_container .info_links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
